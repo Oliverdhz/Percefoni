@@ -1,2 +1,2 @@
-This template was made by Colorlib (https://colorlib.com)
+This template was made by oliver
 Please visit our website for more awesome templates, themes and tools. 

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="shortcut icon" href="Imag/favicon.ico">
+<link rel="stylesheet" href="css/styleform.css">
+
+<title>Registro de empleados</title>
+</head>
+
+<body style="background-color: #fff7b1;">
+    <script
+  src="http://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <script src="js/registrodeformulario.js"></script>
+
+    <form class="text-center border border-light p-5" id ="registro_empleados" action="#!">
+        
+        <p class="h4 mb-4"<br><img src="Imag/sunfi.png" alt=""> Registro de empleados <img src="Imag/sunfi.png" alt=""><br></p>
+        <br>
+            <div class="form-row mb-4">
+                    <div class="col">
+                        <!-- First name -->
+                        <input type="text" id="defaultRegisterFormFirstName" id="nombre_e" class="form-control" placeholder="Nombres">
+                    </div>
+                    <div class="col">
+                        <!-- Last id -->
+                        <input type="text" id="defaultRegisterFormLastName" id= "apellido_e"class="form-control" placeholder="Apellidos">
+                    </div>
+                    </div>
+            <div>
+                <select id = "sexo_e">
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                </select>
+            </div>
+            <br>
+            <input type="text" id = "direccion_e"  class="form-control mb-4" placeholder="Direccion">
+            <input type="number" id = "edad_e" class="form-control mb-4" placeholder="Edad">
+            <input type="email" id ="email_e" class="form-control mb-4" placeholder="Email">
+            <textarea class="form-control mb-4"  id = "horario_e" placeholder="Horario de trabajo"></textarea>
+            <input type="number" id ="salario"   class="form-control mb-4" placeholder="Salario">
+
+            <div class="form-row mb-4">
+        <div class="col">
+            <!-- Cargo -->
+            <select class="form-control mb-4" id = "cargo_e">
+                <option>Cargo</option>
+                <option>Conserje</option>
+                <option>Maestro</option>
+                <option>Ayudante de maestro</option>
+                <option>Contable</option>
+                <option>Cocinero</option>
+                <option>Cuidador</option>
+                <option>Psicologo</option>
+            </select>
+        </div>
+
+        <div class="col">
+                <!-- Dpto -->
+                <select class="form-control mb-4" id="departamento_e">
+                    <option>Departamento</option>
+                    <option>Psicologia</option>
+                    <option>Conserjeria</option>
+                    <option>Area de aprendizaje</option>
+                    <option>Guarderia</option>
+                    <option>Contabilidad</option>
+                    <option>Cocina</option>
+                 </select>
+            </div>
+    <br>
+    <br>
+            <label>Seleccione el nivel al que pertenece</label>
+            <select class="form-control" id="exampleFormControlSelect1" id="nivel_encargado">
+                    <option value="1">Ninguno</option>
+                    <option  value="2">Nido</option>
+                    <option value = "3">Corralito</option>
+                    <option value ="4">Pre-kinder</option>
+                    <option value = "5">Kinder</option>
+                    <option value = "6">Pre-primario</option>
+            </select>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h6>Enfermedades y/o alergias</h6>
+        
+            <textarea class="form-control mb-4" id="enfermedades_alergias"></textarea>
+            <input type="text" id = "tel_personal_e" class="form-control mb-4" placeholder="Telefono personal">
+            <input type="text" id = "tel_pariente_e" class="form-control mb-4" placeholder="Telefono de pariente">
+            Fecha de ingreso
+            <input type="date" id="defaultRegisterFormFirstName"  id = "fecha_ingresoemp"class="form-control mb-4" >	
+            <input type="number" id = "cedula_e" class="form-control mb-4" placeholder="Cédula de identidad">	
+            <div class="form-row mb-4">
+                <div class="col">
+                    <input type="text" id ="nivel_academico_e"  class="form-control mb-4" placeholder="Nivel Académico">
+                </div>
+
+                <!-- Sign up button -->
+             <button class="btn btn-info my-4 btn-block" type="submit">Ingresar</button>
+
+    <hr>
+    </form>
+    <br>
+    <br>
+
+    
+</body>
+
+
+
+</html>

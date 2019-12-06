@@ -1,0 +1,65 @@
+$(document).ready(function(){
+    console.log('Me estoy ejecutando');
+    $('#form_inscripcion').submit(function(esa){
+        const datos = {
+            nombre_n: $('#nombre_n').val(),
+            apellido_n: $('#apellido_n').val(),
+            fecha_nac_n: $('#fecha_nac_n').val(),
+            direccion_n: $('#direccion_n').val(),
+            contacto_n: $('#contacto_n').val(),
+            fecha_ing_n: $('#fecha_ing_n').val(),
+            edad_n: $('#edad_n').val(),
+            niv_academico_n: $('#niv_academico_n option:selected').val(),
+            nombre_m: $('#nombre_m').val(),
+            apellido_m: $('#apellido_m').val(),
+            fecha_nac_m: $('#fecha_nac_m').val(),
+            cedula_m: $('#cedula_m').val(),
+            trabajo_m: $('#trabajo_m').val(),
+            act_des_m: $('#act_des_m').val(),
+            niv_aca_m: $('#niv_aca_m').val(),
+            prof_m: $('#prof_m').val(),
+            direccion_m: $('#direccion_m').val(),
+            tel_m: $('#tel_m').val(),
+            cel_m: $('#cel_m').val(),
+            nombre_p: $('#nombre_p').val(),
+            apellido_p: $('#apellido_p').val(),
+            fecha_nac_p: $('#fecha_nac_p').val(),
+            trabajo_p: $('#trabajo_p').val(),
+            act_des_p: $('#act_des_p').val(),
+            niv_aca_p: $('#niv_aca_p').val(),
+            prof_p: $('#prof_p').val(),
+            direccion_p: $('#direccion_p').val(),
+            tel_p: $('#tel_p').val(),
+            cel_p: $('#cel_p').val(),
+            est_civ_p: $('#est_civ_p option:selected').val(),
+            dif_par: $('#dif_par').val(),
+            cat_par: $('#cat_par option:selected').val(),
+            est_nac_n: $('#est_nac_n option:selected').val(),
+            h_s_g_o_c: $('input:radio[name=1]:checked').val(),
+            e_p_a_e: $('input:radio[name=2]:checked').val(),
+            s_a_m_a: $('input:radio[name=3]:checked').val(),
+            e_c_a_m_n_p_e_d: $('input:radio[name=4]:checked').val(),
+            u_a_c_p: $('input:radio[name=5]:checked').val(),
+            e_p_a_e: $('input:radio[name=6]:checked').val(),
+            p_t_s: $('input:radio[name=7]:checked').val(),
+            l_f: $('input:radio[name=8]:checked').val(),
+            mas_dat_n1: $('#mas_dat_n1').val(),
+            mas_dat_n2: $('#mas_dat_n2').val(),
+            h_a_a_a_c_c_j_i: $('input:radio[name=9]:checked').val(),
+            num_emergencia: $('#num_emergencia').val(),
+            nombre_doc_emergencia: $('#nombre_doc_emergencia').val(),
+            tipo_sangre: $('#tipo_sangre option:selected').val(),
+            males_n: $('#males_n').val(),
+            num_per_emergencia: $('#num_per_emergencia').val(),
+            nom_clinica: $('#nom_clinica').val(),
+            dir_clinica: $('#dir_clinica').val(),
+            med_auto: $('#med_auto').val(),
+            per_emer: $('#per_emer option:selected').val(),
+            mas_info: $('#mas_info').val()
+        };
+        $.post('php/formulario_ingreso.php', datos, function(response){
+            alert(response);
+        });
+        esa.preventDefault();
+    });
+});
